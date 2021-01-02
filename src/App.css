@@ -1,9 +1,10 @@
 .App {
 	width: 100%;
 	height: 100vh;
-	/* background-image: url(https://picsum.photos/seed/picsum/2300/1300); */
-	/* background-size: cover; */
-	background-color: #6983aa;
+	background-image: url(https://picsum.photos/2300/1300);
+	background-size: cover;
+	background-position: center;
+	/* background-color: #00388d; */
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -11,8 +12,8 @@
 	text-align: center;
 }
 
-.center_div {
-	width: 30%;
+.container {
+	width: 40%;
 	height: 70vh;
 	background-color: #f4f4f4;
 	box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.5);
@@ -22,7 +23,7 @@
 h1 {
 	color: #fff;
 	background: transparent;
-	background-color: #9561d4;
+	background-color: #10ac0b;
 	padding: 6px 0 2px 0;
 	margin-bottom: 10px;
 	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
@@ -42,8 +43,9 @@ input {
 button {
 	min-height: 40px;
 	width: 40px;
+	font-size: 30px;
 	border-radius: 50%;
-	background-color: #8566aa;
+	background-color: #10ac0b;
 	color: #fff;
 	font-style: 40px;
 	border: none;
@@ -76,34 +78,32 @@ ul li {
 	align-items: center;
 }
 .todo_style .fa-times {
-	width: 20px;
-	height: 20px;
+	width: 30px;
+	height: 30px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	background-color: #8566aa;
+	background-color: #10ac0b;
 	border-radius: 50%;
 	margin: 0 15px 0 35px;
 	color: aliceblue;
 	box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
 }
-.todo_style .fa-times:hover{
+.todo_style .fa-times:hover {
 	background-color: crimson;
 }
-.todo_style .fa-times:hover .list_style{
-	color: crimson;
-}
-@media (max-width: 768px){
-	.center_div{
+
+@media (max-width: 768px) {
+	.center_div {
 		width: 55%;
 	}
-	.todo_style .fa-times{
+	.todo_style .fa-times {
 		margin: 0 15px 0 15px;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 	}
-	button{
+	button {
 		margin-left: 5px;
 		min-height: 40px;
 		width: 40px;
